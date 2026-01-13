@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./components/navbar";
 
 const pjs = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta-sans",
@@ -8,7 +9,7 @@ const pjs = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Diecast Plane Shop",
+  title: "Aircraft Model Shop",
   description: "Your one-stop shop for diecast model airplanes.",
 };
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pjs.variable} antialiased`}>{children}</body>
+      <body className={`${pjs.className} antialiased`}>
+        <Navbar />
+        <main className="container max-w-5xl mx-auto px-4">{children}</main>
+      </body>
     </html>
   );
 }
