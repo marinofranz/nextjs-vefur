@@ -7,7 +7,7 @@ export function Navbar() {
         <h1 className="text-xl font-bold">Aircraft Model Shop</h1>
         <div className="flex space-x-4">
           <Link href="/">Shop</Link>
-          <Link href="/cart">Cart</Link>
+          <Link href="/locations">Locations</Link>
         </div>
       </div>
     </nav>
