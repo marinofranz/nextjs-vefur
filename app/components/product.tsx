@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import type { Product } from "../page";
 import { Button } from "./button";
